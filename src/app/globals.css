@@ -6,6 +6,25 @@
    position: absolute;
    inset: auto auto auto -24px;
    transform: rotate(-38deg);
+   z-index: 2;
+}
+
+.productCard-img {
+   height: 355px;
+   overflow: hidden;
+}
+
+.productCard-img-el {
+   width: 100%;
+   height: 100%;
+   background-position: center center;
+   background-size: cover;
+   transition: all .5s;
+   z-index: 0;
+}
+
+.productCard-img-el:hover {
+   transform: scale(1.2);
 }
 
 

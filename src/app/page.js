@@ -16,6 +16,7 @@ export default function Home() {
               name="Ergonomic Chair"
               price={299}
               brand="Branch"
+              imgUrl="https://ih1.redbubble.net/image.3076102465.2435/st,small,845x845-pad,1000x1000,f8f8f8.jpg"
             />
           </div>
         </div>

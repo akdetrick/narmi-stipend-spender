@@ -2,7 +2,7 @@
 
 import { Row, Tag } from "@narmi/design_system";
 
-const ProductCard = ({ isFeatured = false, image, price, brand, name }) => {
+const ProductCard = ({ isFeatured = false, imgUrl, price, brand, name }) => {
   return (
     <article className="productCard">
       {isFeatured && (
@@ -11,10 +11,9 @@ const ProductCard = ({ isFeatured = false, image, price, brand, name }) => {
          </div>
       )}
       <div
-        className="bgColor--white rounded--all--m alignChild--center--center"
-        style={{ outline: "1px dotted hotpink", height: "335px" }}
+        className="productCard-img bgColor--white rounded--all--m alignChild--center--center"
       >
-        <span>img lol</span>
+        <div className="productCard-img-el" style={{ backgroundImage: `url(${imgUrl})`}}></div>
       </div>
       <div className="margin--top--l fontColor--primary fontWeight--semibold">
         <Row>
