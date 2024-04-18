@@ -20,8 +20,7 @@ const ExploreView = () => {
         </Tabs.List>
         {categoryEntries.map(([id, name]) => (
           <Tabs.Panel tabId={id}>
-            <div className="padding--all">
-              <h1>{name}</h1>
+            <div className="padding--all margin--top--l">
               {products
                 .filter((p) => p.category.toLowerCase() === id.toLowerCase())
                 .map((p) => (

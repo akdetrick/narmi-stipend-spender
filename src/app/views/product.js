@@ -14,10 +14,9 @@ const ProductView = () => {
     <>
       <div className="margin--bottom">
       <Button
-        kind="plain"
+        kind="negative"
         startIcon="arrow-left"
         label="Back"
-        size="s"
         onClick={() => {
           setAppState({...appState, view: VIEWS.EXPLORE, currentProduct: null })
         }}
