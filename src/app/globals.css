@@ -42,6 +42,10 @@ main {
    outline: 1px dotted hotpink;
 }
 
+.product-add .nds-button {
+   width: 352px;
+}
+
 /* NDS overrides */
 
 .nds-tag--subdued {
