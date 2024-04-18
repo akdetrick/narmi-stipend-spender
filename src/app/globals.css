@@ -49,8 +49,24 @@ main {
 
 .testimonal {
    width: 337px;
+   min-height: 365px;
+   padding-top: 80px !important;
    background-color: rgba(26, 67, 56, 0.05);
+   position: relative;
+   font-size: 18px;
 }
+
+.testimonal:before {
+   font-family: var(--font-family-heading);
+   position: absolute;
+   content: "\301F";
+   font-size: 80px;
+   line-height: 0;
+   color: var(--color-pine);
+   top: var(--space-m);
+   left: var(--space-m);
+}
+
 
 /* NDS overrides */
 

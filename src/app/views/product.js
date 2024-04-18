@@ -61,7 +61,7 @@ const ProductView = () => {
       </section>
 
       <section className="margin--top--xl">
-        <ProductHeading label="Narmi Testimonials" />
+        <ProductHeading label="Narmi testimonials" />
         <div className="margin--top">
           <Row>
             {product.testimonials.length > 0 &&
