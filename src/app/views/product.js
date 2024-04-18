@@ -43,6 +43,7 @@ const ProductView = () => {
           </Row.Item>
           <Row.Item>
             <h2 className="margin--bottom fontColor--heading fontFamily--heading fontWeight--normal fontSize--heading1">
+              {product.brand}<br />
               {product.name}
             </h2>
             <div className="fontSize--l margin--bottom--xl">

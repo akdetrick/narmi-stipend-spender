@@ -9,7 +9,7 @@ const Banner = () => {
 
   return (
     <div className="fontColor--white bgColor--pine padding--x--xl padding--y--xl">
-      <Row>
+      <Row alignItems="center">
         <Row.Item>
           <h1 className="fontFamily--heading fontSize--heading0">
             Welcome, Opal!
