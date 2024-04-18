@@ -1,9 +1,46 @@
 import { useAppContext } from "../context/context";
-import ProductCard from "../components/ProductCard";
+import VIEWS from "../context/views";
+import { Row, Button, Tabs } from "@narmi/design_system";
 
 const ProductView = () => {
+  const [appState, setAppState] = useAppContext();
+  const { currentProduct, products } = appState;
+
+  const product = products.filter(({ name }) =>
+    name === currentProduct
+  )[0];
+
   return (
-   <h1>PRODUCT VIEW LOL</h1>
+    <>
+      <div className="margin--bottom">
+      <Button
+        kind="plain"
+        startIcon="arrow-left"
+        label="Back"
+        size="s"
+        onClick={() => {
+          setAppState({...appState, view: VIEWS.EXPLORE, currentProduct: null })
+        }}
+      />
+      </div>
+      <Row>
+        <Row.Item shrink>
+          <div className="product-image rounded--all--m" style={{ backgroundImage: `url(${product.imgUrl})`}}></div>
+        </Row.Item>
+        <Row.Item>
+          <h2 className="margin--bottom fontColor--heading fontFamily--heading fontWeight--normal fontSize--heading1">{product.name}</h2>
+          <div className="fontSize--l">${product.price}</div>
+          <Tabs>
+            <Tabs.List>
+              <Tabs.Tab label="Overview" />
+              <Tabs.Tab label="Benefits" tabId="benefits" />
+              <Tabs.Tab label="Details" tabId="details" />
+            </Tabs.List>
+          </Tabs>
+          <p>{product.description}</p>
+        </Row.Item>
+      </Row>
+    </>
   );
 };
 

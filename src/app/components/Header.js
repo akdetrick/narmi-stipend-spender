@@ -4,7 +4,7 @@ import { Row, IconButton } from "@narmi/design_system";
 
 const Header = () => {
    return (
-      <header className="padding--x--xl padding--y">
+      <header className="padding--x--xl padding--y bgColor--white">
          <Row>
             <Row.Item>
                Narmi

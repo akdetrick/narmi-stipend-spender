@@ -6,7 +6,7 @@ import "./globals.css";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body style={{ backgroundColor: "#F4F6F5" }}>
         <AppProvider>{children}</AppProvider>
       </body>
     </html>

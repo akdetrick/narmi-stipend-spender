@@ -1,6 +1,7 @@
 // { [state key]: [display copy] }
 export default {
   comfort: "Comfort",
-  furniture: "Furniture",
+  focus: "Focus",
+  companionship: "Companionship",
   tech: "Tech",
 };

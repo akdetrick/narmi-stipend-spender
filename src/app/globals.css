@@ -1,3 +1,8 @@
+main {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
 .productCard {
    position: relative;
    cursor: pointer;
@@ -13,6 +18,7 @@
 .productCard-img {
    height: 355px;
    overflow: hidden;
+   background-color: white;
 }
 
 .productCard-img-el {
@@ -20,6 +26,7 @@
    height: 100%;
    background-position: center center;
    background-size: cover;
+   background-color: white;
    transition: all .5s;
    z-index: 0;
 }
@@ -28,6 +35,12 @@
    transform: scale(1.2);
 }
 
+
+.product-image {
+   width: 666px;
+   height: 632px; /* TODO: remove this and debug outline */
+   outline: 1px dotted hotpink;
+}
 
 /* NDS overrides */
 
