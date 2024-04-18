@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Banner />
+      {view === VIEWS.EXPLORE && <Banner />}
       <main className="padding--x--xl padding--y--l">
         {view === VIEWS.EXPLORE && <ExploreView />}
         {currentProduct !== null && view === VIEWS.PRODUCT && <ProductView />}

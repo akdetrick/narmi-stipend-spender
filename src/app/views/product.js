@@ -1,14 +1,14 @@
 import { useAppContext } from "../context/context";
 import VIEWS from "../context/views";
 import { Row, Button, Tabs } from "@narmi/design_system";
+import Testimonial from "../components/Testimonial";
 import Print from "../components/Print";
 
 const ProductHeading = ({ label }) => (
-
-        <h3 className="fontFamily--heading fontSize--heading3 fontWeight--normal">
-          {label}
-        </h3>
-)
+  <h3 className="fontFamily--heading fontSize--heading3 fontWeight--normal">
+    {label}
+  </h3>
+);
 
 const ProductView = () => {
   const [appState, setAppState] = useAppContext();
@@ -62,6 +62,16 @@ const ProductView = () => {
 
       <section className="margin--top--xl">
         <ProductHeading label="Narmi Testimonials" />
+        <div className="margin--top">
+          <Row>
+            {product.testimonials.length > 0 &&
+              product.testimonials.map((t) => (
+                <Row.Item shrink>
+                  <Testimonial text={t} />
+                </Row.Item>
+              ))}
+          </Row>
+        </div>
       </section>
 
       <section className="margin--top--xl">
