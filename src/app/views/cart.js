@@ -8,7 +8,7 @@ const Cart = () => {
       <aside className="cart-list padding--all bgColor-smokeGrey padding--top--xl">
         <Row>
           <Row.Item>
-            <h2 className="fontWeight--normal fontFamily--heading fontSize--heading2 fontColor--heading">
+            <h2 className="fontWeight--normal fontFamily--heading fontSize--heading1 fontColor--heading">
               My office
             </h2>
           </Row.Item>
