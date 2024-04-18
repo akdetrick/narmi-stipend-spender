@@ -124,7 +124,7 @@ export default {
   view: VIEWS.EXPLORE,
   currentProduct: null,
   remainingBalance: 500,
-  cart: {}, // products will be added and removed (by name)
+  cart: [], 
   products: [...comfortProducts, ...companionProducts],
   purchasers,
 };

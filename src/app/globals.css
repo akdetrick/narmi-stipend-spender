@@ -3,6 +3,36 @@ main {
    margin: 0 auto;
 }
 
+.cart-status {
+   position: relative;
+}
+
+.cart-status .num {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   border-radius: 50%;
+   background-color: red;
+   width: 16px;
+   height: 16px;
+   color: white;
+   line-height: 0;
+   font-size: 12px;
+   top: -6px;
+   right: -6px
+}
+
+.stipend-remaining {
+   width: 130px;
+   height: 130px;
+   background-size: cover;
+   background-position: center center;
+   background-repeat: none;
+   font-size: 36px;
+   margin-right: 36px;
+}
+
 .products-container {
    display: flex;
    gap: 18px;

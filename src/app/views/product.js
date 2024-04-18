@@ -36,14 +36,18 @@ const ProductView = () => {
           <Row.Item shrink>
             <div
               className="bgColor--white product-image rounded--all--m"
-              style={{ backgroundImage: `url("./products/${product.imgFile}")` }}
+              style={{
+                backgroundImage: `url("./products/${product.imgFile}")`,
+              }}
             ></div>
           </Row.Item>
           <Row.Item>
             <h2 className="margin--bottom fontColor--heading fontFamily--heading fontWeight--normal fontSize--heading1">
               {product.name}
             </h2>
-            <div className="fontSize--l margin--bottom--xl">${product.price}</div>
+            <div className="fontSize--l margin--bottom--xl">
+              ${product.price}
+            </div>
             <Tabs>
               <Tabs.List>
                 <Tabs.Tab label="Overview" />
@@ -53,7 +57,15 @@ const ProductView = () => {
             </Tabs>
             <p className="margin--bottom--xxl">{product.description}</p>
             <div className="margin--top--xxl product-add">
-              <Button label="Add to bag" />
+              <Button
+                label="Add to bag"
+                onClick={() => {
+                  setAppState({
+                    ...appState,
+                    cart: [...appState.cart, product],
+                  });
+                }}
+              />
             </div>
           </Row.Item>
         </Row>
