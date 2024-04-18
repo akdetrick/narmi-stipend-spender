@@ -1,6 +1,6 @@
 "use client";
 import { createContext, useState, useContext } from "react";
-import initialState from "./initialState";
+import initialState from "./data";
 
 const AppContext = createContext();
 

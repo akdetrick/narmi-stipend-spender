@@ -1,7 +1,9 @@
-import views from "./views";
+import VIEWS from "./views";
+import CATEGORIES from "./categories";
 
 export default {
-  view: views.EXPLORE,
+  view: VIEWS.EXPLORE,
+  currentProduct: null,
   products: [
     {
       name: "chair",
@@ -9,10 +11,12 @@ export default {
       brand: "branch",
       description: "You can sit on it",
       purchasers: ["Phil", "Alice"],
+      category: CATEGORIES.furniture,
       testimonials: [
          "I like to sit on chair",
          "Chair makes happy",
       ],
+      imgUrl: "https://ih1.redbubble.net/image.3076102465.2435/st,small,845x845-pad,1000x1000,f8f8f8.jpg",
     },
   ],
   purchasers: {
