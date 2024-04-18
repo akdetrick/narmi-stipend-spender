@@ -10,6 +10,7 @@ const ProductCard = ({ isFeatured = false, imgUrl, price, brand, name }) => {
             <Tag label="Featured!" />
          </div>
       )}
+      {/* TODO: link! */}
       <div
         className="productCard-img bgColor--white rounded--all--m alignChild--center--center"
       >

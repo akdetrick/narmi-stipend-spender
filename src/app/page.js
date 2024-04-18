@@ -1,17 +1,19 @@
+"use client"
+import { useAppContext } from "./context/context";
 import Header from "./components/Header";
 import Banner from "./components/Banner";
 import ProductCard from "./components/ProductCard";
-import { AppWrapper } from "./context/AppContext";
 
 export default function Home() {
+  const [appState, setAppState] = useAppContext();
   return (
-    <AppWrapper>
+    <>
       <Header />
       <Banner />
-      <main style={{ padding: "2rem"}}>
+      <main style={{ padding: "2rem" }}>
         <div className="padding--all--xl">
-          <div style={{width: "274px"}}>
-            <ProductCard 
+          <div style={{ width: "274px" }}>
+            <ProductCard
               isFeatured={true}
               name="Ergonomic Chair"
               price={299}
@@ -21,6 +23,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-    </AppWrapper>
+    </>
   );
 }
