@@ -14,6 +14,7 @@ const ProductCard = ({ isFeatured = false, imgUrl, price, brand, name }) => {
       onClick={() => {
         setAppState({ ...appState, view: VIEWS.PRODUCT, currentProduct: name });
       }}
+      style={{ width: "274px" }}
     >
       {isFeatured && (
         <div className="productCard-spangle">
