@@ -39,7 +39,8 @@ main {
 .product-image {
    width: 666px;
    height: 632px; /* TODO: remove this and debug outline */
-   outline: 1px dotted hotpink;
+   background-position: center center;
+   background-size: cover;
 }
 
 .product-add .nds-button {
