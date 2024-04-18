@@ -1,6 +1,12 @@
 main {
-   max-width: 1200px;
+   max-width: 1320px;
    margin: 0 auto;
+}
+
+.products-container {
+   display: flex;
+   gap: 18px;
+   flex-wrap: wrap;
 }
 
 .productCard {

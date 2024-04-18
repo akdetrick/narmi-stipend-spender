@@ -2,7 +2,6 @@ import { useAppContext } from "../context/context";
 import VIEWS from "../context/views";
 import { Row, Button, Tabs } from "@narmi/design_system";
 import Testimonial from "../components/Testimonial";
-import Print from "../components/Print";
 
 const ProductHeading = ({ label }) => (
   <h3 className="fontFamily--heading fontSize--heading3 fontWeight--normal">
@@ -37,7 +36,7 @@ const ProductView = () => {
           <Row.Item shrink>
             <div
               className="bgColor--white product-image rounded--all--m"
-              style={{ backgroundImage: `url(${product.imgUrl})` }}
+              style={{ backgroundImage: `url("./products/${product.imgFile}")` }}
             ></div>
           </Row.Item>
           <Row.Item>

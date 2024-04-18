@@ -20,16 +20,15 @@ const ExploreView = () => {
         </Tabs.List>
         {categoryEntries.map(([id, name]) => (
           <Tabs.Panel tabId={id}>
-            <div className="padding--all margin--top--l">
+            <div className="products-container margin--top--l">
               {products
                 .filter((p) => p.category.toLowerCase() === id.toLowerCase())
                 .map((p) => (
                   <ProductCard
-                    isFeatured={true}
                     name={p.name}
                     price={p.price}
                     brand={p.brand}
-                    imgUrl={p.imgUrl}
+                    imgFile={p.imgFile}
                   />
                 ))}
             </div>

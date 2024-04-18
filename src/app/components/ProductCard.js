@@ -4,13 +4,13 @@ import { useAppContext } from "../context/context";
 import VIEWS from "../context/views";
 import { Row, Tag } from "@narmi/design_system";
 
-const ProductCard = ({ isFeatured = false, imgUrl, price, brand, name }) => {
+const ProductCard = ({ isFeatured = false, imgFile, price, brand, name }) => {
   const [appState, setAppState] = useAppContext();
   return (
     <article
       tabIndex={0}
       role="button"
-      className="productCard"
+      className="productCard margin--bottom--l"
       onClick={() => {
         setAppState({ ...appState, view: VIEWS.PRODUCT, currentProduct: name });
       }}
@@ -24,7 +24,7 @@ const ProductCard = ({ isFeatured = false, imgUrl, price, brand, name }) => {
       <div className="productCard-img bgColor--white rounded--all--m alignChild--center--center">
         <div
           className="productCard-img-el"
-          style={{ backgroundImage: `url(${imgUrl})` }}
+          style={{ backgroundImage: `url(/products/${imgFile})` }}
         ></div>
       </div>
       <div className="margin--top--l fontColor--primary fontWeight--semibold">
