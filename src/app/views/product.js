@@ -18,7 +18,7 @@ const ProductView = () => {
   return (
     <>
       <section className="margin--bottom--l">
-        <div className="margin--bottom">
+        <div className="margin--bottom margin--top">
           <Button
             kind="negative"
             startIcon="arrow-left"

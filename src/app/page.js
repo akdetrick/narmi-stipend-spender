@@ -19,7 +19,7 @@ export default function Home() {
     <>
       <Header />
       {view === VIEWS.EXPLORE && <Banner />}
-      <main className="padding--x--xl padding--y--l">
+      <main>
         {view === VIEWS.EXPLORE && <ExploreView />}
         {currentProduct !== null && view === VIEWS.PRODUCT && <ProductView />}
         {appState.isCartOpen && <Cart />}
