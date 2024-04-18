@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header className="padding--x--xl padding--y bgColor--white">
       <Row>
-        <Row.Item>Narmi</Row.Item>
+        <Row.Item>Narmi WFH Stipend</Row.Item>
         <Row.Item shrink>
           <div className="cart-status">
             <IconButton
