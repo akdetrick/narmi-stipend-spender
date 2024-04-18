@@ -54,7 +54,6 @@ main {
 .productCard-img {
    height: 355px;
    overflow: hidden;
-   background-color: white;
 }
 
 .productCard-img-el {
