@@ -1,10 +1,11 @@
 import Header from "./components/Header";
 import Banner from "./components/Banner";
 import ProductCard from "./components/ProductCard";
+import { AppWrapper } from "./context/AppContext";
 
 export default function Home() {
   return (
-    <>
+    <AppWrapper>
       <Header />
       <Banner />
       <main style={{ padding: "2rem"}}>
@@ -18,6 +19,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-    </>
+    </AppWrapper>
   );
 }
