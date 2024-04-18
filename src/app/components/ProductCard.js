@@ -22,10 +22,7 @@ const ProductCard = ({ isFeatured = false, imgFile, price, brand, name }) => {
         </div>
       )}
       <div className="productCard-img bgColor--white rounded--all--m alignChild--center--center">
-        <div
-          className="productCard-img-el"
-          style={{ backgroundImage: `url(/products/${imgFile})` }}
-        ></div>
+        <div style={{ backgroundImage: `url(/products/${imgFile})` }}></div>
       </div>
       <div className="margin--top--l fontColor--primary fontWeight--semibold">
         <Row>

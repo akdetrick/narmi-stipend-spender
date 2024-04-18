@@ -63,6 +63,8 @@ const ProductView = () => {
                   setAppState({
                     ...appState,
                     cart: [...appState.cart, product],
+                    view: VIEWS.EXPLORE,
+                    currentProduct: null,
                   });
                 }}
               />
