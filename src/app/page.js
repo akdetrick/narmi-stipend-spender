@@ -12,6 +12,7 @@ export default function Home() {
         <div className="padding--all--xl">
           <div style={{width: "274px"}}>
             <ProductCard 
+              isFeatured={true}
               name="Ergonomic Chair"
               price={299}
               brand="Branch"

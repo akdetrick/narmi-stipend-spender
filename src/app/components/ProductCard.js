@@ -1,12 +1,17 @@
 "use client";
 
-import { Row } from "@narmi/design_system";
+import { Row, Tag } from "@narmi/design_system";
 
 const ProductCard = ({ isFeatured = false, image, price, brand, name }) => {
   return (
-    <article>
+    <article className="productCard">
+      {isFeatured && (
+         <div className="productCard-spangle">
+            <Tag label="Featured!" />
+         </div>
+      )}
       <div
-        className="bgColor--white rounded--all alignChild--center--center"
+        className="bgColor--white rounded--all--m alignChild--center--center"
         style={{ outline: "1px dotted hotpink", height: "335px" }}
       >
         <span>img lol</span>
