@@ -29,7 +29,7 @@ const Cart = () => {
                 <Row.Item shrink>
                   <div
                     className="cart-img"
-                    style={{ backgroundImage: `url(/products/${p.imgFile})` }}
+                    style={{ backgroundImage: `url(./products/${p.imgFile})` }}
                   ></div>
                 </Row.Item>
                 <Row.Item>
