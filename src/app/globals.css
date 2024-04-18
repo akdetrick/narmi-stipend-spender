@@ -62,9 +62,8 @@ main {
    height: 100%;
    background-position: center center;
    background-size: cover;
-   background-color: white;
    transition: all .5s;
-   z-index: 0;
+   z-index: 1;
 }
 
 .productCard-img-el:hover {
@@ -108,13 +107,13 @@ main {
    background: rgba(0,0,0,0.3);
    position: absolute;
    inset: 0;
-   z-index: 2;
+   z-index: 3;
 }
 
 .cart-list {
    position: absolute;
    height: 100vh;
-   z-index: 3;
+   z-index: 4;
    right: 0;
    width: 533px;
    background-color: rgba(249, 249, 249, 1);
