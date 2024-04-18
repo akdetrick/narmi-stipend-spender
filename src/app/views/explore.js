@@ -35,7 +35,6 @@ const ExploreView = () => {
           </Tabs.Panel>
         ))}
       </Tabs>
-      <Print js={products} />
     </div>
   );
 };

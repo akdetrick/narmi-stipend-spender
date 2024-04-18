@@ -64,6 +64,49 @@ const comfortProducts = [
   },
 ];
 
+const companionProducts = [
+  {
+    name: "Walnut aquarium",
+    price: 299,
+    brand: "Odpaltoy",
+    description: "You can sit on it",
+    purchasers: ["Phil", "Alice"],
+    category: CATEGORIES.companionship,
+    testimonials: ["I like to sit on chair", "Chair makes happy"],
+    imgFile: "walnut-aquarium.png"
+  },
+  {
+    name: "Reptile aquarium",
+    price: 199,
+    brand: "Repti-Zoo",
+    description: "Suitable for damp and humid conditions, hygencis, and easy to clean, making it the perfect choice for pet parents looking to give their scaly sidekick a save and comfortable home\n\nDesigned to maintain the correct heat gradient more safely and easily, which is essential for your little buddy's health and well-being.",
+    purchasers: ["Phil", "Alice"],
+    category: CATEGORIES.companionship,
+    testimonials: ["I like to sit on chair", "Chair makes happy"],
+    imgFile: "reptile-aquarium.png"
+  },
+  {
+    name: "Not-too-sharp cactus",
+    price: 224,
+    brand: "Cactus Co.",
+    description: "You can sit on it",
+    purchasers: ["Phil", "Alice"],
+    category: CATEGORIES.companionship,
+    testimonials: ["I like to sit on chair", "Chair makes happy"],
+    imgFile: "cactus.png"
+  },
+  {
+    name: "Hamster Wheel",
+    price: 45,
+    brand: "HamsterCo",
+    description: "You can sit on it",
+    purchasers: ["Phil", "Alice"],
+    category: CATEGORIES.companionship,
+    testimonials: ["I like to sit on chair", "Chair makes happy"],
+    imgFile: "hamp.png"
+  },
+];
+
 export const purchasers = {
   Phil: {
     department: "Engineering",
@@ -82,6 +125,6 @@ export default {
   currentProduct: null,
   remainingBalance: 500,
   cart: {}, // products will be added and removed (by name)
-  products: [...comfortProducts],
+  products: [...comfortProducts, ...companionProducts],
   purchasers,
 };

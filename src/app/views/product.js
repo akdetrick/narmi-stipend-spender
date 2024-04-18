@@ -43,7 +43,7 @@ const ProductView = () => {
             <h2 className="margin--bottom fontColor--heading fontFamily--heading fontWeight--normal fontSize--heading1">
               {product.name}
             </h2>
-            <div className="fontSize--l">${product.price}</div>
+            <div className="fontSize--l margin--bottom--xl">${product.price}</div>
             <Tabs>
               <Tabs.List>
                 <Tabs.Tab label="Overview" />
@@ -51,7 +51,7 @@ const ProductView = () => {
                 <Tabs.Tab label="Details" tabId="details" />
               </Tabs.List>
             </Tabs>
-            <p>{product.description}</p>
+            <p className="margin--bottom--xxl">{product.description}</p>
             <div className="margin--top--xxl product-add">
               <Button label="Add to bag" />
             </div>
