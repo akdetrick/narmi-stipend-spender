@@ -104,6 +104,33 @@ main {
 }
 
 
+.shim {
+   background: rgba(0,0,0,0.3);
+   position: absolute;
+   inset: 0;
+   z-index: 2;
+}
+
+.cart-list {
+   position: absolute;
+   height: 100vh;
+   z-index: 3;
+   right: 0;
+   width: 533px;
+   background-color: rgba(249, 249, 249, 1);
+}
+
+.cart-list .nds-button {
+   width: 100%;
+   margin: 0 auto;
+}
+
+.cart-img {
+   width: 100px;
+   height: 123px;
+   background-size: cover;
+}
+
 /* NDS overrides */
 
 .nds-tag--subdued {

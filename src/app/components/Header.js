@@ -4,7 +4,7 @@ import { Row, IconButton } from "@narmi/design_system";
 import { useAppContext } from "../context/context";
 
 const Header = () => {
-  const [appState] = useAppContext();
+  const [appState, setAppState] = useAppContext();
 
   const cartNumber = appState.cart.length;
 
@@ -19,6 +19,9 @@ const Header = () => {
               textSize="l"
               name="shopping-bag"
               label="Shopping bag"
+              onClick={() => {
+                setAppState({...appState, isCartOpen: true })
+              }}
             />
             {cartNumber > 0 && <span className="num">{cartNumber}</span>}
           </div>

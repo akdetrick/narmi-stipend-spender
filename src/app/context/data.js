@@ -123,6 +123,7 @@ export const purchasers = {
 export default {
   view: VIEWS.EXPLORE,
   currentProduct: null,
+  isCartOpen: false,
   remainingBalance: 500,
   cart: [], 
   products: [...comfortProducts, ...companionProducts],
