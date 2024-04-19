@@ -11,7 +11,7 @@ const ExploreView = () => {
   const categoryEntries = Object.entries(categories);
 
   return (
-    <div>
+    <div className="margin--top--xl">
       <Tabs>
         <Tabs.List>
           {categoryEntries.map(([id, name]) => (
