@@ -1,9 +1,9 @@
 const Testimonial = ({ text }) => (
   <article
     className="testimonal rounded--all--m padding--all"
-    style={{ backgroundImage: "url('./public/quote.png')" }}
+    style={{ backgroundImage: "url('./quote.png')" }}
   >
-    <div className="padding--x">{text}</div>
+    <div className="padding--x padding--top">{text}</div>
   </article>
 );
 
