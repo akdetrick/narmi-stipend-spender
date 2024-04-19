@@ -11,7 +11,7 @@ const ExploreView = () => {
   const categoryEntries = Object.entries(categories);
 
   return (
-    <div className="padding--all--xl">
+    <div>
       <Tabs>
         <Tabs.List>
           {categoryEntries.map(([id, name]) => (

@@ -9,6 +9,7 @@ const Banner = () => {
 
   return (
     <div className="fontColor--white bgColor--pine padding--x--xl padding--y--xl">
+      <div className="bounds">
       <Row alignItems="center">
         <Row.Item>
           <h1 className="fontFamily--heading fontSize--heading0">
@@ -25,6 +26,7 @@ const Banner = () => {
           </div>
         </Row.Item>
       </Row>
+      </div>
     </div>
   );
 };

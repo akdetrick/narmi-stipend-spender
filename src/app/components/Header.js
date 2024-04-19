@@ -10,6 +10,7 @@ const Header = () => {
 
   return (
     <header className="padding--x--xl padding--y bgColor--white">
+      <div className="bounds">
       <Row>
         <Row.Item>Narmi WFH Stipend</Row.Item>
         <Row.Item shrink>
@@ -27,6 +28,7 @@ const Header = () => {
           </div>
         </Row.Item>
       </Row>
+      </div>
     </header>
   );
 };
